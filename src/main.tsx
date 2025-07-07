@@ -7,7 +7,7 @@ import App from './App.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ThemeProvider theme={lighTheme}>
+    <ThemeProvider theme={lighTheme || darkTheme}>
       <GlobalStyle />
       <App />
     </ThemeProvider>
